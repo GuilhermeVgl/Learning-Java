@@ -9,15 +9,15 @@ public class Exer49 {
     public static void main(String [] args) {
         Scanner scan = new Scanner(System.in);
 
-        int sum = 0;
+        int[] sum = new int[6];
         int par = 0, impar = 0;
 
-        for (int i = 1; i <= 6; i++)
+        for (int i = 1; i < sum.length; i++)
         {
             System.out.print("Informe um número inteiro: ");
-            sum += scan.nextInt();
+            sum[i] += scan.nextInt();
 
-            if (i % 2 == 0) {
+            if (sum[i] % 2 == 0) {
                 par++;
             } else {
                 impar++;
