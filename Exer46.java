@@ -7,11 +7,13 @@ import java.util.*;
 
 public class Exer46 {
     public static void main(String [] args) {
+        Scanner scan = new Scanner(System.in);
 
-        int soma = 0;
+        int cont = 0;
 
         for(int i = 6; i <= 100; i = i + 2)
-            soma += i;
-        System.out.println("O resultado da soma é: " + soma);
+            cont += i;
+        System.out.println("O resultado da soma é: " + cont);
+
     }
 }
